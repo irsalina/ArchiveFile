@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>Create a archive file </title>
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div>
+        <h1>
+            <span class="small">Create archive file </span>
+        </h1>
+
+        <div class="description">
+            <hr>
+        </div>
+        <ol>
+            <li>
+                <label>
+                    <span class="form-label">Select files to archive</span>
+                    <input type="file" multiple id="file-input">
+                </label>
+            </li>
+            <li>
+                <span class="form-label">Show archive content</span>
+                <ul id="file-list">
+                </ul>
+            </li>
+            <li>
+                <label>
+                    <span class="form-label">Choose archive format</span>
+                </label>
+            </li>
+            <ul>
+                <li style="list-style: none;">
+                    <input type="radio" id="zip" checked="true"  name="ziptype" value="zip">zip
+                    <input type="radio" id="rar" name="ziptype" value="rar">rar
+
+                </li>
+            </ul>
+            <div>
+                <a id="download-button" href="#">Download</a>
+            </div>
+        </ol>
+    </div>
+    <script type="text/javascript" src="js/zip.js"></script>
+    <script type="text/javascript" src="js/zip-ext.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>
